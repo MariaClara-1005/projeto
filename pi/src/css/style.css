@@ -50,10 +50,45 @@ nav {
 .nav-list {
     list-style: none;
     display: flex;
+    overflow: hidden;
 }
 .nav-list li {
     letter-spacing: 2px;
     margin-left: 32px;
+}
+li .dropbtn {
+    display: inline-block;
+    color: #090499;
+    text-decoration: none;
+}
+  
+li.dropdown {
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 a, b{
     color: #090499;
