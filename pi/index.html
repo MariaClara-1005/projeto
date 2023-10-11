@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrador</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <script src="https://kit.fontawesome.com/65f22fe718.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+    
+</head>
+<body onLoad="slide1()">
+    <header class="topo">
+        <nav>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <!--<a class="logo" href=""><i class="fa fa-solid fa-location-dot"></i>PetConect</a>-->
+            <a class="logo" href=""><img src="./src/imagens/logo1.png" alt=""></a>
+            
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="https://jaboatao.pe.gov.br/servicos-de-animais/ubs-pet/">UBS</a></li>
+                <li><a href="#localizar">localizar</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="centralizar-texto" style="width: 100%;">
+            <img id="id">
+            <br>
+            <a class="botao-inicial" href="#servicos">conhecer alguns serviços</a>
+                
+        </div>
+    </section>
+    <main class="selecao-do-servico" id="servicos"><br><br>
+        <section class="itens">
+            <br>
+            <h1 class="titulo"> Selecione um Serviço </h1>
+            <ul class="lista-de-itens">
+
+               <li class="item selecionado" id="veterinario" data-name="Veterinario" data-description="">
+                    <img src="./src/imagens/doc.jpg" alt="">
+                </li>
+
+                <li class="item" id="petshop" data-name="PetShop" data-description="">
+                    <img src="./src/imagens/shop.jpg" alt="">
+                </li>
+
+                <li class="item" id="domicilio" data-name="Atendimento a domicilio" data-description="">
+                    <img src="./src/imagens/home.jpg" alt="">
+                </li>
+
+                <li class="item" id="escola" data-name="Escola pra cachorro" data-description="">
+                    <img src="./src/imagens/scool.jpg" alt="">
+                </li>
+                
+            </ul>
+            <br><br>
+        </section>
+        <section class="item-selecionado">
+            <br>
+            <div class="informacoes-item">
+                <!--<img class="item-grande" src="./src/imagens/doc.jpg" alt="Personagem selecionado">
+                -->
+                <h2 class="nome-item" id="nome-item">Veterinario</h2>
+                <p class="descricao-item" id="descricao-item">
+                    
+                </p>
+            </div>
+        </section>
+    </main>
+    <section class="" id="">
+                <br><br>
+        
+    </section>
+    <section class="loc" id="localizar">
+        <div class="pesquisa">
+            <h2 class="titulo">localizações</h2>
+            <br>
+            <select name="" id="">
+                <option value="">Veterinarios</option>
+                <option value="">PetShop</option>
+            </select>
+            <input type="text" name="cep" id="cep" placeholder="Seu CEP">
+            <input type="button" name="pesquisar" id="pesquisar" class="pp" value="pesquisar">
+            
+        </div>
+        <img class="loc-mapa" src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_1280.png" alt="Personagem selecionado">
+                
+
+</section>
+
+    <footer>
+        <p> Desenvolvido por: <a href="https://github.com/MariaClara-1005">@MariaClara</a></p>
+    </footer>
+    <br>
+    <script type="text/javascript">
+        function slide1(){
+        document.getElementById('id').src="https://cdn.pixabay.com/photo/2023/09/04/06/59/dog-8232158_1280.jpg";
+        setTimeout("slide2()", 10000)
+        }
+        
+        function slide2(){
+        document.getElementById('id').src="https://cdn.pixabay.com/photo/2019/04/06/15/58/cat-4107662_1280.jpg";
+        setTimeout("slide3()", 10000)
+        }
+        
+        function slide3(){
+        document.getElementById('id').src="https://cdn.pixabay.com/photo/2018/10/01/09/21/pets-3715733_1280.jpg";
+        setTimeout("slide1()", 10000)
+        }
+        </script>
+    <script src="./src/js/index.js"></script>
+
+
+</body>
+</html>
