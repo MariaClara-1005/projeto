@@ -133,6 +133,13 @@
     .loc {
         padding: 2px;
     }
+    .carregando {
+        width: 40%;
+        top: 0;
+        position: fixed;
+        text-align: center;
+        display: none;
+    }
 }
 @keyframes navLinkFade {
     form {
