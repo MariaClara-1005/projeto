@@ -165,6 +165,9 @@ button:hover {
     .form form {
       width: 80%;
     }
+    .form .centralizar-texto {
+        padding-top: 20%;
+    }
     input {
         width: 80%;
     }
