@@ -13,9 +13,9 @@
     .nav-list {
         background-color: white;
         position: absolute;
-        top: 8vh;
+        top: 10vh;
         left: 0;
-        width: 40vw;
+        width: 50vw;
         height: 92vh;
         flex-direction: column;
         align-items: center;

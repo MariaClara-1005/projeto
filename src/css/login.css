@@ -42,9 +42,10 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /*background: orange;*/
+    background-color: white;
     background-image: url('https://img.freepik.com/vetores-gratis/patas-coloridas-de-cachorro-ou-gato-com-padrao-de-fundo_1017-30662.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1697673600&semt=sph');
     height: 10.5vh;
+    background-repeat: no-repeat;
 }
 .nav-list {
     list-style: none;
