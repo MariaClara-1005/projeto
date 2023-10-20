@@ -193,12 +193,6 @@ li {
     list-style: none;
     max-height: 530px;
 }
-
-.item-selecionado .item-grande{
-    width: 430px;
-    height: 430px;
-}
-
 .item-selecionado .nome-item{
     color: rgb(31, 61, 145);
     border-bottom: 2px solid #FAD200;
