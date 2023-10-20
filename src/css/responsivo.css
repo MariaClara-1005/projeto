@@ -78,7 +78,7 @@
     }
     .loc .pesquisa {
         align-items: center;
-        width: 40%;
+        width: 100%;
         padding: 10px;
         border: double #16136d;
         border-radius: 8px;
