@@ -3,24 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetConect</title><link rel="stylesheet" href="./src/css/login.css">
+    <title>PetConect</title>
+    <link rel="stylesheet" href="./src/css/login.css">
+    <script src="https://kit.fontawesome.com/65f22fe718.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+    
     
 </head>
+<header class="topo">
+    <nav>
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <!--<a class="logo" href=""><i class="fa fa-solid fa-location-dot"></i>PetConect</a>-->
+        <a class="logo" href=""><img src="./src/imagens/logo3.png" alt=""></a>
+        
+        <ul class="nav-list">
+            <li class="fundo"><a href="index.html">Home</a></li>
+            <li class="fundo"><a href="index.html#servicos">Serviços</a></li>
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">UBS</a>
+                <div class="dropdown-content">
+                  <a href="https://conecta.recife.pe.gov.br/categoria/2">Recife</a>
+                  <a href="https://jaboatao.pe.gov.br/servicos-de-animais/ubs-pet/">Jaboatão</a>
+                </div>
+              </li>
+            <li class="fundo"><a href="index.html#localizar">localizar</a></li>
+
+        </ul>
+    </nav>
+</header>
+
 <body>
     <br>
     <section class="form">
         <div class="centralizar-texto">
             <form action="" method="post">
-                <h3>Seja bem-vindo(a) a nossa tela de login</h3><br>
-                <input type="text" placeholder="Login"><br><br>
-                <input type="password" placeholder="Senha"><br><br>
+                <h3>Seja bem-vindo(a) a nossa tela de login</h3>
+                <br>
+                <input type="text" placeholder="Login">
+                <br><br>
+                <img src="https://cdn.pixabay.com/animation/2023/01/31/11/00/11-00-41-940_512.gif" id="gif" alt="">
+                <input type="password" placeholder="Senha" onfocus="ani()">
+                <br><br>
                 <button><b>Entrar</b></button>
                 <br><br>
                 <a href=""><b>Fazer o cadastro</b></a>
             </form>
         </div>
     </section>
+    <script>
+        function ani() {
+          document.getElementById('gif').style.display = 'block';
+        }
+      </script>
     
-    
+    <script src="./src/js/index.js"></script>
 </body>
 </html>

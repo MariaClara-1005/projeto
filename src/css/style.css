@@ -3,7 +3,7 @@
     padding: 0;
 }
 body {
-    background-color: #fafbd9;
+    background-color: #e2f3fa;
     padding-top: 70px;
     color: #090499;
     font-family: "Oxanium";
@@ -146,7 +146,7 @@ li {
     gap: 30px;
     min-height: calc(100vh - 152px);
     justify-content: center;
-    background-color: #d5d6d8;
+    background-color: #97cabf2e;
 }
 .selecao-do-servico .lista-de-itens{
     display: flex;
@@ -275,11 +275,63 @@ li {
     font-size: 15px;
     padding: 10px;
 }
-footer {
-    color: #f8bb05;
+.comentario {
+    text-align: center;
+    background-color: #97cabf2e;
     padding: 8px;
+}
+.comentario .titulo {
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #FAD200;
+    color: rgb(31, 61, 145);
+    width: 100%;
     text-align: center;
 }
+.comentario input {
+    padding: 8px;
+    background-color: #e5f8fd;
+    border-bottom: solid #090499;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 45%;
+}
+.comentario textarea {
+    background-color: #e5f8fd;
+}
+.comentario .email {
+    width: 93%;
+}
+.comentario form {
+    width: 50%;
+    margin: 0 auto;
+}
+.comentario button {
+    background-color: #090499;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    width: 80px;
+}
+footer {
+    color: black;
+    padding: 8px;
+    text-align: center;
+    background-image: url('https://img.freepik.com/vetores-gratis/patas-coloridas-de-cachorro-ou-gato-com-padrao-de-fundo_1017-30662.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1697673600&semt=sph');
+    
+}
 footer a {
-    color: #e6cc0e
+    color: black
+}
+.carregando {
+    background-color: white;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    text-align: center;
+    display: none;
+    height: 800px;
 }

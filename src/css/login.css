@@ -3,12 +3,12 @@
     padding: 0;
 }
 body {
-    background-color: #102a6e;
+    background-color: #e5fbff;
     color: #090499;
 }
 body::before {
     content: "";
-    background-image: url('https://cdn.pixabay.com/photo/2012/03/01/00/53/dog-19812_1280.jpg');
+    background-image: url('https://cdn.pixabay.com/animation/2023/02/02/10/08/10-08-57-160_512.gif');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -18,6 +18,96 @@ body::before {
     z-index: -1;
     opacity: 0.7;
 }
+.topo {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #090499;
+    margin: 8px;
+    transition: 0.3s;
+}
+.nav-list.active {
+    transform: translateX(0);
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*background: orange;*/
+    background-image: url('https://img.freepik.com/vetores-gratis/patas-coloridas-de-cachorro-ou-gato-com-padrao-de-fundo_1017-30662.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1697673600&semt=sph');
+    height: 10.5vh;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    overflow: hidden;
+}
+.nav-list li {
+    letter-spacing: 2px;
+    margin-left: 32px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 4px;
+}
+.nav-list a {
+    color: black;
+    text-decoration: none;
+}
+.nav-list .fundo {
+    background-color: white;
+}
+li .dropbtn {
+    background-color: white;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+  
+li.dropdown {
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+a:hover {
+    opacity: 0.8;
+    color: rgb(0, 170, 255);
+}
+.logo img{
+    width: 20%;
+}
+
 .form {
     text-align: center;
     letter-spacing: 2px;
@@ -28,12 +118,19 @@ body::before {
 }
 .form form {
     color: #16136d;
-    background-color: #f7fb73f7;
+    background-color: #b0daf1f7;
     width: 30%;
-    height: 70%;
+    height: 80%;
     padding: 20px;
-    margin: 0 auto;
     border-radius: 25px;
+    margin: 0 auto;
+}
+#gif {
+    display: none;
+    width: 30%;
+}
+input#senha:focus {
+    animation: teste;
 }
 .form a {
     color: #090499;
@@ -60,6 +157,64 @@ button {
     font-size: 100%;
 }
 button:hover {
-    background-color: #FAD200;
-    color: #090499;
+    background-color: #241076;
+    color: #fbfbfd;
+}
+
+@media (max-width: 1000px) {
+    .form form {
+      width: 80%;
+    }
+    input {
+        width: 80%;
+    }
+    .logo {
+        text-align: right;
+        padding-right: 10%;
+    }
+    .logo img {
+        width: 40%;
+    }
+    .nav-list {
+        background-color: white;
+        position: absolute;
+        top: 8vh;
+        left: 0;
+        width: 40vw;
+        height: 92vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    a {
+        color: black;
+    }
+    .mobile-menu {
+        display: block;
+    }
+  }
+  @keyframes navLinkFade {
+    form {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
 }
