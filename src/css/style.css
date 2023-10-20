@@ -110,11 +110,6 @@ a:hover {
     opacity: 0.8;
     color: rgb(0, 170, 255);
 }
-.logo {
-    font-size: 24px;
-    /*text-transform: uppercase;*/
-    letter-spacing: 4px;
-}
 .logo img{
     width: 20%;
 }
