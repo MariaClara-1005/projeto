@@ -56,7 +56,7 @@
         padding-left: 35px;
     }
     .selecao-do-servico .item img{
-        width: 200px;
+        width: 160px;
     }
     .item-selecionado .descricao-item{
         width: 80%;
@@ -126,6 +126,9 @@
         border: none;
         font-size: 15px;
         padding: 4px;
+    }
+    .loc {
+        padding: 2px;
     }
 }
 @keyframes navLinkFade {

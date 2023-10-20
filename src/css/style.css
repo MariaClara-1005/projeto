@@ -227,7 +227,6 @@ li {
 .loc {
     display: flex;
     align-items: center;
-    gap: 30px;
     justify-content: center;
     padding: 10px;
 }
