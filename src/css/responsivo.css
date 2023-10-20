@@ -133,8 +133,14 @@
     .loc {
         padding: 2px;
     }
+    .comentario textarea {
+        width: 100%;
+    }
+    .comentario form{
+        width: 90%;
+    }
     .carregando {
-        width: 10%;
+        width: 50%;
         top: 0;
         position: fixed;
         text-align: center;
