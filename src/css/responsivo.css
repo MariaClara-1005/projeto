@@ -31,13 +31,13 @@
         display: block;
     }
     .home img{
-        border: double orange;
-        width: 95%;
-        height: 5%;
+        width: 98%;
+        height: 8%;
     }
     .home {
         text-align: center;
         margin: 0 auto;
+        padding-top: 5px;
     }
     .home .centralizar-texto {
         padding-top: 10%;
