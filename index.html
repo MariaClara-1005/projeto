@@ -21,11 +21,11 @@
                 <div class="line3"></div>
             </div>
             <!--<a class="logo" href=""><i class="fa fa-solid fa-location-dot"></i>PetConect</a>-->
-            <a class="logo" href=""><img src="./src/imagens/logo1.png" alt=""></a>
+            <a class="logo" href=""><img src="./src/imagens/logo3.png" alt=""></a>
             
             <ul class="nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#servicos">Serviços</a></li>
+                <li class="fundo"><a href="#home">Home</a></li>
+                <li class="fundo"><a href="#servicos">Serviços</a></li>
 
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">UBS</a>
@@ -34,39 +34,64 @@
                       <a href="https://jaboatao.pe.gov.br/servicos-de-animais/ubs-pet/">Jaboatão</a>
                     </div>
                   </li>
-                <li><a href="#localizar">localizar</a></li>
-                <li><a href="/login/">Login</a></li>
+                <li class="fundo"><a href="#localizar">localizar</a></li>
+                <li class="fundo-l"><a style="color: white;" href="login.html">Login</a></li>
             </ul>
         </nav>
     </header>
     <section class="home" id="home">
         <div class="centralizar-texto" style="width: 100%;">
             <img id="id">
-            <br>
+            <!--<br><br>
             <a class="botao-inicial" href="#servicos">conhecer alguns serviços</a>
-                
+            -->    
         </div>
     </section>
+    
     <main class="selecao-do-servico" id="servicos"><br><br>
         <section class="itens">
             <br>
             <h1 class="titulo"> Selecione um Serviço </h1>
             <ul class="lista-de-itens">
 
-               <li class="item selecionado" id="veterinario" data-name="Veterinario" data-description="">
+               <li class="item selecionado" id="veterinario" data-name="Veterinario" 
+               data-description="O médico veterinário é o profissional que 
+               atua pela saúde e pelo bem-estar dos 
+               animais, alguns dos serviços de um 
+               veterinário é Realizar e interpretar 
+               resultados exame clínico de animais; 
+               diagnosticar patologias; prescrever 
+               tratamento; indicar medidas de proteção e 
+               prevenção; realizar sedação, anestesia, e 
+               tranquilização de animais; realizar 
+               cirurgias e intervenções de odontologia 
+               veterinária; coletar material para exames laboratoriais">
                     <img src="./src/imagens/doc.jpg" alt="">
                 </li>
 
-                <li class="item" id="petshop" data-name="PetShop" data-description="">
+                <li class="item" id="petshop" data-name="PetShop" 
+                data-description='Pet shop ou loja de animais é um estabelecimento comercial 
+                especializado em vender animais, geralmente filhotes, 
+                destinados a serem animais de estimação, bem como alimentos, 
+                acessórios e artigos para entusiastas, 
+                além de oferecer serviços de embelezamento como banho, tosa e perfumaria.'>
                     <img src="./src/imagens/shop.jpg" alt="">
                 </li>
 
-                <li class="item" id="domicilio" data-name="Atendimento a domicilio" data-description="">
+                <li class="item" id="domicilio" data-name="Atendimento a domicilio" 
+                data-description="O atendimento a domicílio para pets é uma opção
+                 que traz conforto e tranquilidade para os tutores de animais domésticos. 
+                 Com veterinários profissionais indo até sua casa, seus animais 
+                 recebem cuidados de qualidade no ambiente familiar, reduzindo o estresse.">
                     <img src="./src/imagens/home.jpg" alt="">
                 </li>
 
-                <li class="item" id="escola" data-name="Escola pra cachorro" data-description="">
-                    <img src="./src/imagens/scool.jpg" alt="">
+                <li class="item" id="escola" data-name="Hoteis para pet's" 
+                data-description="Então, a Hospedagem Pet é um tipo de serviço em que 
+                o seu animal de estimação ficará hospedado em ambiente 
+                familiar no período de sua ausência, e receberá os cuidados 
+                necessários, e tudo com muito amor, carinho e diversão.">
+                    <img src="./src/imagens/scool.png" alt="">
                 </li>
                 
             </ul>
@@ -80,7 +105,15 @@
                 <h2 class="nome-item" id="nome-item">Veterinario</h2>
                 <p class="descricao-item" id="descricao-item">
                     
+                    O médico veterinário é o profissional que atua pela saúde e pelo bem-estar dos animais, 
+                    alguns dos serviços de um veterinário é 
+                    Realizar e interpretar resultados exame clínico de animais; diagnosticar patologias; 
+                    prescrever tratamento; indicar medidas de proteção e prevenção; realizar sedação, anestesia, 
+                    e tranquilização de animais; realizar cirurgias e intervenções de odontologia veterinária; 
+                    coletar material para exames laboratoriais
                 </p>
+                <br>
+                <p class="link"><a style="color: white;" href="login.html">Mais informações</a></p>
             </div>
         </section>
     </main>
@@ -96,8 +129,10 @@
                 <option value="">Veterinarios</option>
                 <option value="">PetShop</option>
             </select>
+            <br><br>
             <input type="text" name="cep" id="cep" placeholder="Seu CEP">
-            <input type="button" name="pesquisar" id="pesquisar" class="pp" value="pesquisar">
+            <br><br>
+            <input type="button" name="pesquisar" id="pesquisar" class="pp" value="Pesquisar">
             
         </div>
         <img class="loc-mapa" src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_1280.png" alt="Personagem selecionado">
@@ -111,17 +146,17 @@
     <br>
     <script type="text/javascript">
         function slide1(){
-        document.getElementById('id').src="https://www.reidosanimais.com.br/media/wysiwyg/Blog/REI_BLOG_980x600_PETNOVERAO.png";
+        document.getElementById('id').src="./src/imagens/banner1.jpg";
         setTimeout("slide2()", 10000)
         }
         
         function slide2(){
-        document.getElementById('id').src="https://www.reidosanimais.com.br/media/wysiwyg/Blog/REI_Capa-04---VAI-VIAJAR-980X600.png";
+        document.getElementById('id').src="./src/imagens/banner2.jpg";
         setTimeout("slide3()", 10000)
         }
         
         function slide3(){
-        document.getElementById('id').src="https://i.pinimg.com/1200x/22/aa/2c/22aa2c28f7eea74706b68418a8a8feff.jpg";
+        document.getElementById('id').src="./src/imagens/banner3.jpg";
         setTimeout("slide1()", 10000)
         }
         </script>
