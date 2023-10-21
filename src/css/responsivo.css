@@ -53,10 +53,12 @@
     }
     .selecao-do-servico .lista-de-itens{
         gap: 9px;
-        padding-left: 35px;
+        padding-left: 40px;
+        text-align: center;
     }
     .selecao-do-servico .item img{
         width: 140px;
+        margin: 0 auto;
     }
     .item-selecionado .descricao-item{
         width: 80%;
