@@ -145,6 +145,9 @@
         text-align: center;
         display: none;
     }
+    .carregando img {
+        width: 60%;
+    }
 }
 @keyframes navLinkFade {
     form {
