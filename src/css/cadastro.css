@@ -53,3 +53,10 @@ input {
 .botao:hover {
     background-color: orange;
 }
+
+
+@media (max-width: 1000px) {
+    section {
+        width: 100%;
+    }
+}
