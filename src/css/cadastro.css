@@ -43,6 +43,9 @@ input {
 .pequeno {
     width: 10%;
 }
+.data {
+    width: 20%;
+}
 .botao {
     color: white;
     background-color: rgb(24, 24, 113);
