@@ -10,7 +10,6 @@ body {
 }
 body::before {
     content: "";
-    /*background-image: url('https://cdn.pixabay.com/photo/2012/03/01/00/53/dog-19812_1280.jpg');*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

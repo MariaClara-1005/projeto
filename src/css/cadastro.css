@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #e2f3fa;
+    padding: 10px;
+}
+section {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    background-color: rgb(240, 244, 243);
+    padding: 10px;
+    box-shadow: 0px 0px 10px 3px rgb(152, 177, 197);
+    border-radius: 10px;
+}
+form {
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    color: rgb(24, 24, 113);
+    border-bottom: solid orange;
+}
+input {
+    padding: 5px;
+    width: 40%;
+    border-bottom: solid orange;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #f6efdc;
+}
+.grande {
+    width: 95%;
+}
+.radio {
+    width: 3%;
+}
+.pequeno {
+    width: 10%;
+}
+.botao {
+    color: white;
+    background-color: rgb(24, 24, 113);
+    border-radius: 4px;
+    padding: 5px;
+    text-decoration: none;
+}
+.botao:hover {
+    background-color: orange;
+}
