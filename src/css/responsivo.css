@@ -36,17 +36,14 @@
     .nav-list li a:hover {
         color: white;
     }
-    .nav-list .fundo-l{
-        padding-top: 100%;
-    }
-    .nav-list .fundo-l:hover{
+    /*.nav-list .fundo-l:hover{
         background-color: white;
     }
     .nav-list .fundo-l a:hover{
         background-color: #102a6e;
         padding: 5px;
         border-radius: 8px;
-    }
+    }*/
     .mobile-menu {
         display: block;
     }
