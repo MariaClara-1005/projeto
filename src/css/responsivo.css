@@ -15,17 +15,37 @@
         position: absolute;
         top: 10vh;
         left: 0;
-        width: 50vw;
+        width: 40vw;
         height: 92vh;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+        align-items: left;
         transform: translateX(-100%);
         transition: transform 0.3s ease-in;
     }
     .nav-list li {
+        padding:10px 30px;
+        display:block;
+        outline:0;
         margin-left: 0;
         opacity: 0;
+    }
+    .nav-list li:hover {
+        background-color: #102a6e;
+        color: white;
+    }
+    .nav-list li a:hover {
+        color: white;
+    }
+    .nav-list .fundo-l{
+        padding-top: 90%;
+    }
+    .nav-list .fundo-l:hover{
+        background-color: white;
+    }
+    .nav-list .fundo-l a:hover{
+        background-color: #102a6e;
+        padding: 5px;
+        border-radius: 8px;
     }
     .mobile-menu {
         display: block;

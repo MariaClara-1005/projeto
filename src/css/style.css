@@ -56,7 +56,6 @@ nav {
     font-size: 20px;
 }
 li .dropbtn {
-    background-color: white;
     display: inline-block;
     color: black;
     text-decoration: none;
@@ -75,14 +74,14 @@ li.dropdown {
   
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 10px 30px;
     text-decoration: none;
     display: block;
     text-align: left;
 }
   
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: blue;
 }
   
 .dropdown:hover .dropdown-content {
